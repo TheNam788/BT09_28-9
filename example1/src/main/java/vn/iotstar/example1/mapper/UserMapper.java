@@ -1,0 +1,1 @@
+package vn.iotstar.example1.mapper; import org.mapstruct.*; import vn.iotstar.example1.dto.UserDTO; import vn.iotstar.example1.entity.User; @Mapper(componentModel="spring") public interface UserMapper { @Mapping(target="roleName",source="role.name") UserDTO toDto(User user); }
